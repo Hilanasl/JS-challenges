@@ -1,0 +1,18 @@
+//Write a function that takes an array of numbers.
+//Find and returns the number that appears an odd number of times within the array.
+
+function myFunction(a) {
+  for (let i = 0; i < a.length; i++) {
+    let count = 0;
+    for (let j = 0; j < a.lenght; i++) {
+      if (a[i] === a[j]) count++;
+    }
+    if (count % 2 !== 0) return count;
+  }
+}
+
+console.log(myFunction([1]));
+
+console.log(myFunction([0, 3, 3]));
+
+console.log(myFunction([4, 2, 2, 4, 4]));
